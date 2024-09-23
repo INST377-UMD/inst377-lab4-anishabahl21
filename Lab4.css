@@ -1,0 +1,44 @@
+body{
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.alertMe{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.changeColorButton {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.TextTester {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.AddText {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+button{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    align-content: right;
+}
