@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>INST377 Lab 4</title>
+        <link rel = "stylesheet" href = "Lab 4.css">
+    </head>
+
+    <body>
+        <h1 id = "word">INST377 Lab 4</h1>
+
+    <!--Alert Me Section-->
+<div class = "alertMe">
+    <form name = "alertForm" onsubmit="showAlert()">
+        <label>Name: </label>
+        <input type="text" id="name" required>
+        <button type="submit">Alert Me</button>
+    </form>
+</div>
+
+    <!--Change Color Section-->
+<div class = "changeColorButton">
+    <button id = "color-button" onclick = "changeColor()">Change Color</button>
+</div>
+    <!--Text Tester-->
+<div class = "TextTester">
+    <form id = "text-tester">
+        <input type = "text" id = "text-input" placeholder = "Enter Text" required>
+        <button type = "button" onclick = "validateText()">Validate Text</button>
+    </form>
+</div>
+
+    <!--Add Text -->
+<div class = "AddText">
+    <button id="add-text" type = "button" onclick = "addText()">Add Text</button>
+</div>
+
+    <script type = "text/javascript">
+        function showAlert(){
+            const t = document.getElementById("name").value
+            alert('Hi ' + t + "!")
+        }
+        isPink = true; 
+        function changeColor(){
+            if(isPink){
+                document.body.style.backgroundColor = 'green';
+            }else{
+                document.body.style.backgroundColor = 'pink';
+            }
+            isPink = !isPink;
+        }
+
+        function validateText(){
+            const textInput = document.getElementById("text-input").value;
+            const validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+            if(validation.test(textInput)) {
+                alert('Text contains special characters!')
+            }else{
+                alert('Text is valid')
+            }
+        }   
+        function addText(){
+            const heading = document.getElementById('word');
+            heading.innerHTML += ' Add Text';
+        }
+        //}
+                   
+        
+            
+            
+
+
+    
+
+    </script>
+
+    <!--Change Color Section-->
+
+        
+        
+
+
+
+    </script>
+    </body>
+</html>
